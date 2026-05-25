@@ -1,4 +1,3 @@
-```md
 <h1 align="center">Pablo Villalba</h1>
 
 <p align="center">
@@ -101,4 +100,3 @@ Background processing and service integration architecture.
     <img src="https://skillicons.dev/icons?i=linkedin" height="40" />
   </a>
 </p>
-```
