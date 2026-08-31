@@ -26,18 +26,27 @@ Currently interested in:
 ## Core Stack
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=laravel,php,postgresql,docker,vue,ts,githubactions,linux,bash" />
+  <img src="https://skillicons.dev/icons?i=laravel,php,postgresql,docker,vue,ts,nodejs,python,githubactions,linux,bash,git" />
 </p>
+
+Backend — Laravel, PHP, Node.js, Python, FastAPI, Java, Spring, REST APIs, RabbitMQ
 
 ### Familiar With
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=python,fastapi,spring,kubernetes,terraform,grafana,mongodb,rabbitmq" />
+  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,kubernetes,terraform,grafana,mongodb,mysql,elasticsearch,rabbitmq,spring,fastapi,postman" />
 </p>
+
+Frontend — React, Next.js, Vue, TypeScript, Tailwind CSS | DevOps — Docker, Kubernetes, Terraform, Grafana, GitHub Actions, CI/CD, Linux, Bash | Databases — PostgreSQL, MySQL, MongoDB, Elasticsearch
 
 ---
 
 ## Featured Projects
+
+### Developer Portfolio
+> Next.js + TypeScript + Tailwind + GitHub API
+
+Modern developer portfolio built with Next.js, TypeScript and GitHub API integration — [github.com/pablov01/portafolio](https://github.com/pablov01/portafolio)
 
 ### Financial Cooperative System
 > Laravel + PostgreSQL + Docker + Queues
@@ -45,14 +54,14 @@ Currently interested in:
 Management platform focused on financial workflows, scalability and automation.
 
 ### DevOps Monitoring Stack
-> Grafana + Docker + CI/CD
+> Docker + Grafana + CI/CD + Linux
 
-Monitoring and observability environment with automated deployments.
+Infrastructure observability environment with automated deployments.
 
 ### Automation & Integration Services
-> Laravel + RabbitMQ + APIs
+> Laravel + RabbitMQ + APIs + Queues
 
-Background processing and service integration architecture.
+Background processing and service integration architecture with async workflows.
 
 ---
 
