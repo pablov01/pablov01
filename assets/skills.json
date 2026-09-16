@@ -1,0 +1,29 @@
+{
+  "title": "Skill Radar",
+  "axes": [
+    {
+      "label": "Backend",
+      "value": 90
+    },
+    {
+      "label": "DevOps",
+      "value": 78
+    },
+    {
+      "label": "Databases",
+      "value": 85
+    },
+    {
+      "label": "Frontend",
+      "value": 72
+    },
+    {
+      "label": "Architecture",
+      "value": 80
+    },
+    {
+      "label": "Automation",
+      "value": 88
+    }
+  ]
+}

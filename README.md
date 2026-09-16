@@ -1,18 +1,36 @@
-<h1 align="center">Pablo Villalba</h1>
+<div align="center">
 
-<p align="center">
-Backend & DevOps Developer
-</p>
+<!-- BANNER 3D — SVG fallback (real Three.js at portafolio) -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+  <img src="assets/banner-dark.svg" width="100%" alt="Pablo Villalba — Backend & DevOps">
+</picture>
 
-<p align="center">
-Focused on Laravel, PostgreSQL, Docker and automation.
-</p>
+<a href="https://github.com/pablov01/portafolio">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2600&pause=900&color=22D3EE&center=true&vCenter=true&width=880&lines=Pablo+Villalba+%E2%80%94+Backend+%26+DevOps;Building+systems+that+scale;Backend+%C2%B7+DevOps+%C2%B7+Automation+%C2%B7+Three.js" alt="typing">
+</a>
+
+<br>
+
+<a href="https://github.com/pablov01"><img src="https://img.shields.io/badge/GitHub-pablov01-0d1117?style=for-the-badge&logo=github&logoColor=22d3ee" alt="GitHub"></a>&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/pablov01/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>&nbsp;&nbsp;
+<a href="https://github.com/pablov01/portafolio"><img src="https://img.shields.io/badge/Portfolio-Three.js-0d1117?style=for-the-badge&logo=threedotjs&logoColor=22d3ee" alt="Portfolio"></a>
+
+<br>
+
+<img src="https://komarev.com/ghpvc/?username=pablov01&style=flat&color=22d3ee&label=profile+views" alt="profile views">
+<a href="https://github.com/pablov01/portafolio"><img src="https://img.shields.io/badge/demo-3D-22d3ee?style=flat" alt="3d demo"></a>
+
+</div>
 
 ---
 
 ## About
 
-I build backend systems, scalable applications and automation workflows focused on maintainability, performance and clean architecture.
+I build **backend systems, scalable applications and automation workflows** focused on maintainability, performance and clean architecture.
+
+> `portafolio/` is the live Next.js + Three.js portfolio — this profile is its GitHub mirror. Single source of truth: [`portafolio/src/data/profile.ts`](https://github.com/pablov01/portafolio/blob/main/src/data/profile.ts) + [`portafolio/src/data/projects.ts`](https://github.com/pablov01/portafolio/blob/main/src/data/projects.ts) → synced to `pablov01/assets/*.json`.
 
 Currently interested in:
 - Backend Engineering
@@ -20,6 +38,8 @@ Currently interested in:
 - System Architecture
 - Automation
 - Cybersecurity
+
+**→ Live 3D demo:** [`pablov01/portafolio`](https://github.com/pablov01/portafolio) — `Scene.tsx` (TorusKnot + Stars + OrbitControls, scroll-driven camera) + `SkillsNetwork.tsx` (graph 3D).
 
 ---
 
@@ -43,69 +63,116 @@ Frontend — React, Next.js, Vue, TypeScript, Tailwind CSS | DevOps — Docker, 
 
 ## Featured Projects
 
-### Developer Portfolio
-> Next.js + TypeScript + Tailwind + GitHub API
+> Unified with `portafolio/src/data/projects.ts` — edit there, this README updates via cards.
 
-Modern developer portfolio built with Next.js, TypeScript and GitHub API integration — [github.com/pablov01/portafolio](https://github.com/pablov01/portafolio)
+| Project | Stack | Links |
+|---|---|---|
+| **Developer Portfolio** · Modern portfolio with Next.js + Three.js | Next.js, TypeScript, Tailwind, Three.js, GitHub API | [repo](https://github.com/pablov01/portafolio) |
+| **Financial Cooperative System** · Scalable financial workflows | Laravel, PostgreSQL, Docker, Queues | *private — owned by employer* |
+| **DevOps Monitoring Stack** · Observability + automated deploys | Docker, Grafana, CI/CD, Linux | — |
+| **Automation & Integration Services** · Async workers + service integrations | Laravel, RabbitMQ, APIs, Queues | — |
 
-### Financial Cooperative System
-> Laravel + PostgreSQL + Docker + Queues
+---
 
-Management platform focused on financial workflows, scalability and automation.
+## Signals — Skills
 
-### DevOps Monitoring Stack
-> Docker + Grafana + CI/CD + Linux
+<div align="center">
 
-Infrastructure observability environment with automated deployments.
+<table>
+<tr>
+<td width="50%" align="center" valign="middle">
 
-### Automation & Integration Services
-> Laravel + RabbitMQ + APIs + Queues
+<!-- Self-rated radar — edit assets/skills.json -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/radar-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/radar-light.svg">
+  <img src="assets/radar-dark.svg" width="400" alt="skill radar">
+</picture>
 
-Background processing and service integration architecture with async workflows.
+</td>
+<td width="50%" align="center" valign="middle">
+
+<!-- Stack radar — edit assets/stack.json -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/radar-stack-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/radar-stack-light.svg">
+  <img src="assets/radar-stack-dark.svg" width="400" alt="stack radar">
+</picture>
+
+</td>
+</tr>
+</table>
+
+</div>
 
 ---
 
 ## GitHub Activity
 
-<p align="center">
-  <img 
-    src="https://github-readme-stats.vercel.app/api?username=pablov01&show_icons=true&count_private=true&hide_border=true&theme=transparent" 
-    height="170"
-  />
-  
-  <img 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=pablov01&layout=compact&hide_border=true&theme=transparent" 
-    height="170"
-  />
-</p>
+> Self-hosted — no `github-readme-stats` rate limits. Generated by `scripts/cards.py` + `lowlighter/metrics`.
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-stats-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-stats-light.svg">
+  <img src="assets/card-stats-dark.svg" width="480" alt="GitHub statistics">
+</picture>
+
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-portafolio-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-portafolio-light.svg">
+  <img src="assets/card-portafolio-dark.svg" width="420" alt="portafolio repo card">
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card-pablov01-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-pablov01-light.svg">
+  <img src="assets/card-pablov01-dark.svg" width="420" alt="pablov01 repo card">
+</picture>
+
+<br>
+
+<img src="assets/metrics.languages.svg" height="165" alt="most used languages — generated by lowlighter/metrics every 6h">
+
+</div>
 
 ---
 
-## WakaTime
+## 3D — Where Three.js lives
 
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
+This profile can't run WebGL (GitHub sanitizes JS). The real 3D is in the portfolio:
+
+- **`portafolio/src/components/three/Scene.tsx`** — full-screen `Canvas` with `TorusKnot`, `Icosahedron`, `Stars(3000)`, `OrbitControls(autoRotate)`, scroll-driven `Rig`.
+- **`portafolio/src/components/three/SkillsNetwork.tsx`** — network graph (6 nodes: Backend/Frontend/DevOps/Databases/Tools + center) floating in the Skills section.
+- **Banner fallback** in this repo: `assets/banner-dark/light.svg` — static 3D-inspired SVG with glow, grid and torus hint, generated by `scripts/generate-banner.py`.
+
+Run locally: `cd portafolio && npm install && npm run dev` → http://localhost:3000 (drag to orbit, scroll moves camera).
 
 ---
 
-## Currently Playing
+## Sync — keep both repos consistent
+
+```bash
+# single source of truth lives in portafolio/
+# after editing portafolio/src/data/{profile,projects}.ts:
+python scripts/sync-from-portafolio.py   # copies SKILLS_RADAR/STACK_RADAR/projects → assets/*.json + regenerates radar/cards
+```
+
+Or edit `assets/*.json` directly — next `charts.yml` run will redraw SVGs.
+
+---
+
+## Connect
 
 <p align="left">
-
-[![Spotify](https://novatorem.bgstatic.vercel.app/api/spotify)](https://open.spotify.com/user/11153360645)
-
+  <a href="https://github.com/pablov01" target="_blank"><img src="https://skillicons.dev/icons?i=github" height="40" /></a>
+  <a href="https://www.linkedin.com/in/pablov01/" target="_blank"><img src="https://skillicons.dev/icons?i=linkedin" height="40" /></a>
 </p>
 
----
+<div align="center">
 
-## Connect With Me
+<sub>Built with `Next.js` · `Three.js` · self-hosted GitHub cards · synced data — inspired by <a href="https://github.com/emmi-lili/emmi-lili">emmi-lili</a></sub>
 
-<p align="left">
-  <a href="https://github.com/pablov01" target="_blank">
-    <img src="https://skillicons.dev/icons?i=github" height="40" />
-  </a>
-
-  <a href="https://www.linkedin.com/in/pablov01/" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linkedin" height="40" />
-  </a>
-</p>
+</div>

@@ -1,0 +1,29 @@
+{
+  "title": "Stack & Infra",
+  "axes": [
+    {
+      "label": "Laravel / PHP",
+      "value": 90
+    },
+    {
+      "label": "PostgreSQL",
+      "value": 86
+    },
+    {
+      "label": "Docker",
+      "value": 84
+    },
+    {
+      "label": "TypeScript",
+      "value": 75
+    },
+    {
+      "label": "RabbitMQ",
+      "value": 78
+    },
+    {
+      "label": "Linux / CI/CD",
+      "value": 80
+    }
+  ]
+}
