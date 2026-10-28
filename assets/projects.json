@@ -1,13 +1,13 @@
 {
-  "_comment": "Sync from portafolio/src/data/projects.ts — solo repos públicos visibles en GitHub; privados se listan en tabla pero sin card",
+  "_comment": "Sync from portafolio/src/data/projects.ts",
   "projects": [
     {
       "repo": "portafolio",
-      "description": "Modern portfolio with Next.js, TypeScript, Three.js and GitHub API — immersive 3D + dark glass UI."
+      "description": "Modern developer portfolio built with Next.js, TypeScript and GitHub API integration."
     },
     {
       "repo": "pablov01",
-      "description": "GitHub profile with self-hosted stats, radar charts and 3D banner — no external rate limits."
+      "description": "GitHub profile with self-hosted stats, radar charts and a generated banner — no external rate limits."
     }
   ]
 }

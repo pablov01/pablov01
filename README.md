@@ -1,6 +1,6 @@
 <div align="center">
 
-<!-- BANNER 3D — SVG fallback (real Three.js at portafolio) -->
+<!-- BANNER — generated SVG (live SELENE site at portafolio) -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
@@ -8,19 +8,19 @@
 </picture>
 
 <a href="https://github.com/pablov01/portafolio">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2600&pause=900&color=22D3EE&center=true&vCenter=true&width=880&lines=Pablo+Villalba+%E2%80%94+Backend+%26+DevOps;Building+systems+that+scale;Backend+%C2%B7+DevOps+%C2%B7+Automation+%C2%B7+Three.js" alt="typing">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2600&pause=900&color=22D3EE&center=true&vCenter=true&width=880&lines=Pablo+Villalba+%E2%80%94+Backend+%26+DevOps;Building+systems+that+scale;Backend+%C2%B7+DevOps+%C2%B7+Automation+%C2%B7+SELENE" alt="typing">
 </a>
 
 <br>
 
 <a href="https://github.com/pablov01"><img src="https://img.shields.io/badge/GitHub-pablov01-0d1117?style=for-the-badge&logo=github&logoColor=22d3ee" alt="GitHub"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/pablov01/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>&nbsp;&nbsp;
-<a href="https://github.com/pablov01/portafolio"><img src="https://img.shields.io/badge/Portfolio-Three.js-0d1117?style=for-the-badge&logo=threedotjs&logoColor=22d3ee" alt="Portfolio"></a>
+<a href="https://github.com/pablov01/portafolio"><img src="https://img.shields.io/badge/Portfolio-SELENE-0d1117?style=for-the-badge&logo=nextdotjs&logoColor=22d3ee" alt="Portfolio"></a>
 
 <br>
 
 <img src="https://komarev.com/ghpvc/?username=pablov01&style=flat&color=22d3ee&label=profile+views" alt="profile views">
-<a href="https://github.com/pablov01/portafolio"><img src="https://img.shields.io/badge/demo-3D-22d3ee?style=flat" alt="3d demo"></a>
+<a href="https://github.com/pablov01/portafolio"><img src="https://img.shields.io/badge/demo-SELENE-22d3ee?style=flat" alt="SELENE demo"></a>
 
 </div>
 
@@ -30,7 +30,7 @@
 
 I build **backend systems, scalable applications and automation workflows** focused on maintainability, performance and clean architecture.
 
-> `portafolio/` is the live Next.js + Three.js portfolio — this profile is its GitHub mirror. Single source of truth: [`portafolio/src/data/profile.ts`](https://github.com/pablov01/portafolio/blob/main/src/data/profile.ts) + [`portafolio/src/data/projects.ts`](https://github.com/pablov01/portafolio/blob/main/src/data/projects.ts) → synced to `pablov01/assets/*.json`.
+> `portafolio/` is the live Next.js portfolio — this profile is its GitHub mirror. Single source of truth: [`portafolio/src/data/profile.ts`](https://github.com/pablov01/portafolio/blob/main/src/data/profile.ts), [`portafolio/src/data/projects.ts`](https://github.com/pablov01/portafolio/blob/main/src/data/projects.ts) and [`portafolio/src/data/site.ts`](https://github.com/pablov01/portafolio/blob/main/src/data/site.ts) → synced to `pablov01/assets/*.json`.
 
 Currently interested in:
 - Backend Engineering
@@ -39,7 +39,7 @@ Currently interested in:
 - Automation
 - Cybersecurity
 
-**→ Live 3D demo:** [`pablov01/portafolio`](https://github.com/pablov01/portafolio) — `Scene.tsx` (TorusKnot + Stars + OrbitControls, scroll-driven camera) + `SkillsNetwork.tsx` (graph 3D).
+**→ Live portfolio:** [`pablov01/portafolio`](https://github.com/pablov01/portafolio) — **SELENE** visual system: `Earthrise.tsx` (scroll-pinned lunar scene rendered from layered assets + canvas dust), `WorkReel.tsx` (horizontal project reel), `Trajectory.tsx` (SVG orbital timeline) and `Capabilities.tsx`. Résumés in English and Spanish under `public/documents/`.
 
 ---
 
@@ -67,7 +67,7 @@ Frontend — React, Next.js, Vue, TypeScript, Tailwind CSS | DevOps — Docker, 
 
 | Project | Stack | Links |
 |---|---|---|
-| **Developer Portfolio** · Modern portfolio with Next.js + Three.js | Next.js, TypeScript, Tailwind, Three.js, GitHub API | [repo](https://github.com/pablov01/portafolio) |
+| **Developer Portfolio** · SELENE editorial portfolio with scroll-driven lunar scenes | Next.js, TypeScript, Tailwind, Lenis, GitHub API | [repo](https://github.com/pablov01/portafolio) |
 | **Financial Cooperative System** · Scalable financial workflows | Laravel, PostgreSQL, Docker, Queues | *private — owned by employer* |
 | **DevOps Monitoring Stack** · Observability + automated deploys | Docker, Grafana, CI/CD, Linux | — |
 | **Automation & Integration Services** · Async workers + service integrations | Laravel, RabbitMQ, APIs, Queues | — |
@@ -140,15 +140,18 @@ Frontend — React, Next.js, Vue, TypeScript, Tailwind CSS | DevOps — Docker, 
 
 ---
 
-## 3D — Where Three.js lives
+## SELENE — the visual system
 
-This profile can't run WebGL (GitHub sanitizes JS). The real 3D is in the portfolio:
+GitHub can't run WebGL or scroll animations, so the profile keeps static equivalents. The live experience is in the portfolio:
 
-- **`portafolio/src/components/three/Scene.tsx`** — full-screen `Canvas` with `TorusKnot`, `Icosahedron`, `Stars(3000)`, `OrbitControls(autoRotate)`, scroll-driven `Rig`.
-- **`portafolio/src/components/three/SkillsNetwork.tsx`** — network graph (6 nodes: Backend/Frontend/DevOps/Databases/Tools + center) floating in the Skills section.
-- **Banner fallback** in this repo: `assets/banner-dark/light.svg` — static 3D-inspired SVG with glow, grid and torus hint, generated by `scripts/generate-banner.py`.
+- **`portafolio/src/components/Earthrise.tsx`** — 400vh pinned hero: layered lunar `webp` art (sky, earth, moonscape, frame, astronaut, ground), canvas dust motes, scroll-driven parallax and a HUD with Asunción clock.
+- **`portafolio/src/components/WorkReel.tsx`** — horizontally pinned project reel driven by `scroll.ts` + `pinProgress()`, reading live repo stars from the GitHub API.
+- **`portafolio/src/components/Trajectory.tsx`** — SVG orbit (Earth → Moon) that draws the path as you scroll and maps the four career legs.
+- **`portafolio/src/components/Capabilities.tsx`** — backend / DevOps / full-stack capability cards generated from `SKILL_GROUPS`.
+- **`portafolio/src/components/ContactSection.tsx`** — contact channels plus downloadable résumés (EN / ES).
+- **Banner fallback** in this repo: `assets/banner-dark/light.svg` — generated by `scripts/generate-banner.py`.
 
-Run locally: `cd portafolio && npm install && npm run dev` → http://localhost:3000 (drag to orbit, scroll moves camera).
+Run locally: `cd portafolio && npm install && npm run dev` → http://localhost:3000 (scroll to move through the scenes, reduced-motion is respected).
 
 ---
 
@@ -156,11 +159,11 @@ Run locally: `cd portafolio && npm install && npm run dev` → http://localhost:
 
 ```bash
 # single source of truth lives in portafolio/
-# after editing portafolio/src/data/{profile,projects}.ts:
-python scripts/sync-from-portafolio.py   # copies SKILLS_RADAR/STACK_RADAR/projects → assets/*.json + regenerates radar/cards
+# after editing portafolio/src/data/{profile,projects,site}.ts:
+python scripts/sync-from-portafolio.py   # copies SKILLS_RADAR/STACK_RADAR/projects → assets/*.json + regenerates radar/banner
 ```
 
-Or edit `assets/*.json` directly — next `charts.yml` run will redraw SVGs.
+Or edit `assets/*.json` directly — next `charts.yml` run will redraw the SVGs.
 
 ---
 
@@ -173,6 +176,6 @@ Or edit `assets/*.json` directly — next `charts.yml` run will redraw SVGs.
 
 <div align="center">
 
-<sub>Built with `Next.js` · `Three.js` · self-hosted GitHub cards · synced data — inspired by <a href="https://github.com/emmi-lili/emmi-lili">emmi-lili</a></sub>
+<sub>Built with `Next.js` · `SELENE` · self-hosted GitHub cards · synced data — inspired by <a href="https://github.com/emmi-lili/emmi-lili">emmi-lili</a></sub>
 
 </div>

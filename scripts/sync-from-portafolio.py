@@ -32,10 +32,9 @@ def parse_skills(portafolio: Path):
 
 def parse_projects(portafolio: Path):
     src = (portafolio / "src/data/projects.ts").read_text()
-    repos = re.findall(r'repo:\s*"([^"]+)"', src)
+    repos = list(dict.fromkeys(re.findall(r'repo:\s*"([^"]+)"', src)))
     # descriptions: capture repo + description pairs
     descs = re.findall(r'repo:\s*"([^"]+)"\s*,\s*title:[^,]+,\s*description:\s*"([^"]+)"', src, re.S)
-    # fallback: map repo->desc
     desc_map = {r: d for r, d in descs}
     return repos, desc_map
 
@@ -58,12 +57,25 @@ def main():
     (assets / "stack.json").write_text(json.dumps({"title": stack_title, "axes": stack_axes}, indent=2, ensure_ascii=False) + "\n")
     print(f"wrote skills.json ({len(skills_axes)} axes) + stack.json ({len(stack_axes)} axes)")
 
-    # projects.json — only repos that exist on GitHub will get cards; include up to 4
-    projects = []
-    for r in repos[:4]:
-        projects.append({"repo": r, "description": desc_map.get(r, "")})
-    (assets / "projects.json").write_text(json.dumps({"_comment": "Sync from portafolio/src/data/projects.ts", "projects": projects}, indent=2, ensure_ascii=False) + "\n")
-    print(f"wrote projects.json ({len(projects)} repos: {', '.join(repos[:4])})")
+    # projects.json — only repos curated there get cards (public repos only).
+    # Descriptions are refreshed from portafolio when the repo is listed; entries
+    # that only exist here (e.g. pablov01) keep their current description.
+    projects_path = assets / "projects.json"
+    curated = []
+    if projects_path.exists():
+        try:
+            curated = json.loads(projects_path.read_text()).get("projects", [])
+        except json.JSONDecodeError:
+            curated = []
+    if curated:
+        projects = [
+            {"repo": item["repo"], "description": desc_map.get(item["repo"], item["description"])}
+            for item in curated
+        ]
+    else:
+        projects = [{"repo": r, "description": desc_map.get(r, "")} for r in repos[:4]]
+    projects_path.write_text(json.dumps({"_comment": "Sync from portafolio/src/data/projects.ts", "projects": projects}, indent=2, ensure_ascii=False) + "\n")
+    print(f"wrote projects.json ({len(projects)} repos: {', '.join(p['repo'] for p in projects)})")
 
     # regenerate
     for cmd in [

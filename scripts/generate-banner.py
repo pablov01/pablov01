@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Minimal 3D-inspired banner (dark/light) — fallback for GitHub README.
-The real Three.js lives in portafolio/ three-lab. This SVG gives the same vibe static."""
+"""Generated banner (dark/light) — static fallback for the GitHub profile README.
+The live SELENE visual system lives in portafolio/. This SVG keeps the same lunar feel."""
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -18,7 +18,7 @@ BANNER_DARK = """<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="28
   <path d="M0 210 H1180 M0 70 H1180 M590 0 V280"/>
   <rect x="80" y="40" width="1020" height="200" rx="12" fill="none"/>
 </g>
-<!-- 3d torus hint -->
+<!-- orbital motif -->
 <g transform="translate(1020,70)">
   <ellipse cx="0" cy="0" rx="58" ry="58" fill="none" stroke="url(#g)" stroke-width="3" opacity="0.9" filter="url(#glow)"/>
   <ellipse cx="0" cy="0" rx="38" ry="18" fill="none" stroke="#22d3ee" stroke-width="1.5" opacity="0.5"/>
@@ -29,13 +29,13 @@ BANNER_DARK = """<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="28
 <g font-family="JetBrains Mono, ui-monospace, monospace" fill="#E2E8F0">
   <text x="48" y="54" font-size="13" fill="#22d3ee" letter-spacing="0.18em">pablov01@portfolio — zsh — 118×28</text>
   <text x="48" y="108" font-size="32" font-weight="800">Pablo Villalba <tspan fill="#22d3ee">—</tspan> Backend &amp; DevOps</text>
-  <text x="48" y="138" font-size="14" fill="#94a3b8">Laravel · PostgreSQL · Docker · RabbitMQ · TypeScript · Next.js · Three.js</text>
+  <text x="48" y="138" font-size="14" fill="#94a3b8">Laravel · PostgreSQL · Docker · RabbitMQ · TypeScript · Next.js · SELENE</text>
   <text x="48" y="170" font-size="13" fill="#64748b">$ profile.sh --live  <tspan fill="#22d3ee">▌</tspan></text>
-  <text x="48" y="205" font-size="12" fill="#475569">Building systems that scale — automation, infra &amp; 3D web — <tspan fill="#22d3ee">portafolio →</tspan></text>
+  <text x="48" y="205" font-size="12" fill="#475569">Building systems that scale — backend, infra &amp; interface — <tspan fill="#22d3ee">portafolio →</tspan></text>
 </g>
 <g transform="translate(48,228)">
   <rect x="0" y="0" width="132" height="26" rx="13" fill="none" stroke="#22d3ee" opacity="0.9"/>
-  <text x="66" y="17" text-anchor="middle" font-family="ui-sans-serif" font-size="11" fill="#22d3ee" font-weight="700">VIEW 3D DEMO →</text>
+  <text x="66" y="17" text-anchor="middle" font-family="ui-sans-serif" font-size="11" fill="#22d3ee" font-weight="700">VIEW PORTFOLIO →</text>
 </g>
 </svg>
 """
